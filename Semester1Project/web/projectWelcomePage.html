@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Rock-Paper-Scissors Welcome</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action ="newPlayerForm.html">
+            Are you a new user.
+            <input type = "submit"  value ="New user"/>
+        </form>
+        <form action ="updateUserForm.html">
+            Already existing player but want to modify your choices
+            <input type = "submit"  value ="update user"/>
+        </form>
+        <form method="POST" action="/Semester1Project/finalProjectServlet">
+            <input type="hidden" name="formName" value="singleMatch" />
+            Single Match
+            <input type = "submit"  value ="play"/>
+        </form>
+        <form method="POST" action="/Semester1Project/finalProjectServlet">
+            <input type="hidden" name="formName" value="tournament" />
+            tournament
+            <input type = "submit"  value ="play"/>
+        </form>        
+    </body>
+</html>
